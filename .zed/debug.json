@@ -1,0 +1,25 @@
+[
+  {
+    "label": "Next.js: debug full stack",
+    "request": "launch",
+    "adapter": "javascript",
+    "program": "$ZED_WORKTREE_ROOT/node_modules/next/dist/bin/next",
+    "initialize_args": {
+      "console": "integratedTerminal",
+      "type": "pwa-node",
+      "runtimeArgs": ["--inspect"],
+      "skipFiles": ["<node_internals>/**"],
+      "serverReadyAction": {
+        "action": "debugWithChrome",
+        "killOnServerStop": true,
+        "pattern": "- Local:.+(https?://.+)",
+        "uriFormat": "%s",
+        "webRoot": "/Users/gaauwe/Projects/personal/zed-debugger-nextjs" // NOTE: this need to be your absolute path of your project
+      },
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "turbopack://[project]/*": "/Users/gaauwe/Projects/personal/zed-debugger-nextjs/*"
+      }
+    }
+  }
+]
