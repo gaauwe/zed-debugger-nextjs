@@ -5,8 +5,6 @@
     "adapter": "javascript",
     "initialize_args": {
       "type": "pwa-chrome",
-      "request": "attach",
-      "name": "Attach to browser",
       "port": 9222
     }
   },
