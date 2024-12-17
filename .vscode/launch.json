@@ -23,6 +23,12 @@
             "sourceMapPathOverrides": {
                 "turbopack://[project]/*": "${webRoot}/*"
             }
+        },
+        {
+            "type": "msedge",
+            "request": "attach",
+            "name": "Next.js: Attach to browser",
+            "port": 9222
         }
     ]
 }
